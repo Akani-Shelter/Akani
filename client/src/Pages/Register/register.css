@@ -1,0 +1,16 @@
+
+.card-header{
+    text-transform: uppercase;
+    font-size: large;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+}
+.label, .new{
+    font-size: 0.9em;
+    color: black;
+}
+
+.label{
+    font-weight: 500; 
+}
+

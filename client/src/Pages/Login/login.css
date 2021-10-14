@@ -1,0 +1,31 @@
+/* body {
+    min-height: 100%;
+    
+} */
+.content-cover{
+    position: absolute;
+    display: block;
+    width: 100%;
+    min-height: 100% !important;
+    background-image: url('../../images/background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.card-header{
+    text-transform: uppercase;
+    font-size: large;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+}
+.label, .new{
+    font-size: 0.9em;
+    color: black;
+}
+
+.label{
+    font-weight: 500; 
+}
+
