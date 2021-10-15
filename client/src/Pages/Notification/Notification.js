@@ -1,12 +1,11 @@
+import "./Notifications.css";
+import "react-day-picker/lib/style.css";
 import React from "react";
 import { Card, Container, Row } from "react-bootstrap";
-import { Link } from "react-router-dom";
-import "./Note.css";
-import Sidebar from "../../components/Sidebar/Sidebar";
-import Checkbox from "@material-ui/core/Checkbox";
 import Hyperlink from "react-native-hyperlink";
 import { Text } from "react-native";
-import "react-day-picker/lib/style.css";
+import Sidebar from "../../components/Sidebar/Sidebar";
+import Checkbox from "@material-ui/core/Checkbox";
 import moment from "moment";
 
 const filterOptions = ["Read", "Unread", "Latest", "Oldest"];
