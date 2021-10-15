@@ -2,7 +2,6 @@ import './App.css';
 import {Route} from "react-router-dom"
 import login from "./Pages/Login/login"
 import Register from "./Pages/Register/register"
-import Settings from "./Pages/Settings/Settings";
 import UpdatePassword from "./Pages/UpdatePassword/updatePassword"
 import UpdateProfile from "./Pages/UpdateProfile/updateProfile"
 import Home from "./Pages/Home/Home"
@@ -44,7 +43,6 @@ function App() {
                     <Route exact path="/login" component={login}/>
                     <Route exact path="/updatePassword" component={UpdatePassword}/>
                     <Route exact path="/updateProfile" component={UpdateProfile}/>
-                    <Route exact path="/Settings" component={Settings}/>
                     <Route exact path="/Profile" component={Profile}/>
                     <Route exact path="/Notification" component={Notification}/>
                 </section>
