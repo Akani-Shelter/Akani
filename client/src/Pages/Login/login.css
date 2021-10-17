@@ -7,8 +7,9 @@
     display: block;
     width: 100%;
     min-height: 100% !important;
-    background-image: url('../../images/background.jpg');
+    background-image: url('../../images/cryptosis.png');
     background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
     overflow-y: hidden;
     overflow-x: hidden;

@@ -148,28 +148,53 @@ export default function Sidebar(props) {
             {/* Navigation */}
 
             <ul className="md:flex-col md:min-w-full flex flex-col list-none">
-              <li className="items-center">
+
+            <li className="items-center">
                 <Link
                   className={
                     "text-xs uppercase py-3 font-bold block " +
-                    (window.location.href.indexOf("/home") !== -1
+                    (window.location.href.indexOf("/job-applicants") !== -1
                       ? "text-lightBlue-500 hover:text-lightBlue-600"
                       : "text-blueGray-700 hover:text-blueGray-500")
                   }
-                  to="/home"
+                  to="/Notification"
                   onClick={changeLocation}
                 >
                   <i
                     className={
-                      "fas fa-tv mr-2 text-sm " +
-                      (window.location.href.indexOf("/home") !== -1
+                      "fas fa-address-card mr-2 text-sm " +
+                      (window.location.href.indexOf("/job-applicants") !== -1
                         ? "opacity-75"
                         : "text-blueGray-300")
                     }
-                  />{" "}
-                  Dashboard
+                  ></i>
+                  Job Applicants
                 </Link>
               </li>
+
+              <li className="items-center">
+                <Link
+                  className={
+                    "text-xs uppercase py-3 font-bold block " +
+                    (window.location.href.indexOf("/job-listings") !== -1
+                      ? "text-lightBlue-500 hover:text-lightBlue-600"
+                      : "text-blueGray-700 hover:text-blueGray-500")
+                  }
+                  to="/Notification"
+                  onClick={changeLocation}
+                >
+                  <i
+                    className={
+                      "fas fa-atlas mr-2 text-sm " +
+                      (window.location.href.indexOf("/job-listings") !== -1
+                        ? "opacity-75"
+                        : "text-blueGray-300")
+                    }
+                  ></i>
+                  Job Listings
+                </Link>
+              </li>
+          
 
               <li className="items-center">
                 <Link

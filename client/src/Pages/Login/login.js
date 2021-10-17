@@ -1,5 +1,5 @@
 import React, { useRef, useState } from "react"
-import { Form, Button, Alert } from "react-bootstrap"
+import { Form, Button, Alert, Navbar } from "react-bootstrap"
 import { useAuth } from "../../Auth/Auth"
 import { Link, useHistory } from "react-router-dom"
 import "./login.css"
@@ -31,16 +31,12 @@ export default function Signup() {
         <React.Fragment>
         <div className="content-cover" style={{fontFamily:"Nunito"}}>
             <div className="row" >
-                <div className="col-md-12 mx-auto p-0" >
-                    <img src={"/cryptosis2-t.png"} alt="cryptosis logo" style={{margin:"auto"}} />
-                </div>
-                <div className="col-md-4 mx-auto p-0">
+                <div className="col-md-4 mx-auto p-5 mt-5">
                     <div className="card shadow-lg">
                         <div className="card-header text-center">Login</div>
                         <div className="card-body">
                             {error && <Alert variant="danger">{error}</Alert>}
-                            <Form onSubmit={handleSubmit}>
-                            
+                            <Form onSubmit={handleSubmit}>                            
                                 <Form.Group id="email">
                                     <div style={{width:"70%",margin:"auto"}}>
                                         <Form.Label className="label">Email</Form.Label>
@@ -62,7 +58,7 @@ export default function Signup() {
                                     </Button>
                                 </Form.Group>
                                 <div className="mt-2 new" style={{width:"70%",margin:"auto"}}>
-                                    New to Cryptosis? <Link to="/register" className="label"><strong>Register here</strong></Link>
+                                    New to Akani? <Link to="/register" className="label"><strong>Register here</strong></Link>
                                 </div>
                             </Form>
                         
