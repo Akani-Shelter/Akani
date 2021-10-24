@@ -157,7 +157,7 @@ export default function Sidebar(props) {
                       ? "text-lightBlue-500 hover:text-lightBlue-600"
                       : "text-blueGray-700 hover:text-blueGray-500")
                   }
-                  to="/Notification"
+                  to="/job-applicants"
                   onClick={changeLocation}
                 >
                   <i
@@ -180,7 +180,7 @@ export default function Sidebar(props) {
                       ? "text-lightBlue-500 hover:text-lightBlue-600"
                       : "text-blueGray-700 hover:text-blueGray-500")
                   }
-                  to="/Notification"
+                  to="/job-listings"
                   onClick={changeLocation}
                 >
                   <i

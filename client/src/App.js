@@ -7,7 +7,7 @@ import UpdateProfile from "./Pages/UpdateProfile/updateProfile"
 import Home from "./Pages/Home/Home"
 import Profile from "./Pages/Profile/Profile"
 import Notification from "./Pages/Notification/Notification";
-import jobListings from "./Pages/JobApplicants/job-applicants";
+import jobListings from "./Pages/JobListings/job-listings";
 import jobApplicants from "./Pages/JobApplicants/job-applicants";
 import {BrowserRouter as Router , Switch} from "react-router-dom";
 import { AuthProvider } from "./Auth/Auth"
