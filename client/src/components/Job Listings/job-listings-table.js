@@ -14,15 +14,16 @@ import Paper from '@mui/material/Paper';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
 
-function createData(name) {
+function createData(name, date, skills, amount, experiance, description) {
   return {
     name,
+    description,
     details: [
       {
-        date: '2020-01-05',
-        skills: 'Python, Ruby, Go',
-        amount: '15000-17000',
-        experiance: '1 year'
+        date: date,
+        skills: skills,
+        amount: amount,
+        experiance: experiance
       }
     ],
   };
@@ -53,7 +54,7 @@ function Row(props) {
           <Collapse in={open} timeout="auto" unmountOnExit>
             <Box sx={{ margin: 1 }}>
               <Typography variant="p" gutterBottom component="div">
-                Looking for a good web developer with javascript, python and ruby skills. Minimum work experiance is 1 year. 
+                {row.description} 
               </Typography>
               <Typography variant="h6" gutterBottom component="div" className="mt-2">
                 Details
@@ -91,7 +92,7 @@ function Row(props) {
 }
 
 const rows = [
-  createData('Web Developer'),
+  createData('Web Developer', '2020-01-05', 'Python, Ruby, Go', '15000-17000', '1 year', 'Looking for a good web developer with javascript, python and ruby skills. Minimum work experiance is 1 year.'),
 ];
 
 export default function CollapsibleTable() {
@@ -101,7 +102,7 @@ export default function CollapsibleTable() {
         <TableHead>
           <TableRow>
             <TableCell />
-            <TableCell>Jobs</TableCell>
+            <TableCell>Job Listings</TableCell>
           </TableRow>
         </TableHead>
         <TableBody>
