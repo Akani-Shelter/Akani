@@ -1,5 +1,5 @@
 import React, { useState, useEffect}  from "react";
-import { Modal, Button } from "react-bootstrap";
+import { Modal } from "react-bootstrap";
 
 export default function ModalComp(props) {
 

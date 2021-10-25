@@ -2,13 +2,13 @@ import React, { useRef, useState } from "react"
 import { Form, Button, Alert } from "react-bootstrap"
 import { useAuth } from "../../Auth/Auth"
 import { Link, useHistory } from "react-router-dom"
-import { db } from '../../firebase'
 import axios from "axios";
+
 export default function Signup() {
     const emailRef = useRef()
     const passwordRef = useRef()
     const passwordConfirmRef = useRef()
-    const { signup, currentUser } = useAuth()
+    const { signup } = useAuth()
     const [error, setError] = useState("")
     const [loading, setLoading] = useState(false)
     const history = useHistory()
@@ -28,11 +28,9 @@ export default function Signup() {
             setError("")
             setLoading(true)
             await signup(emailRef.current.value, passwordRef.current.value);
-            const docRef = await db.collection(`Users`).doc(emailRef.current.value);
-            docRef.set({user_id: emailRef.current.value});
             axios.post(`http://localhost:8080/user/register`, {email: emailRef.current.value}).then(() => {
                 localStorage.setItem('emailSession',emailRef.current.value);
-                history.push("/home")
+                history.push("/job-applicants")
             })
         } catch(error) {
             console.error(`An error occurred while trying to register the user: ${error}`);

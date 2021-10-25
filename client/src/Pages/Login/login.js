@@ -1,5 +1,5 @@
 import React, { useRef, useState } from "react"
-import { Form, Button, Alert, Navbar } from "react-bootstrap"
+import { Form, Button, Alert} from "react-bootstrap"
 import { useAuth } from "../../Auth/Auth"
 import { Link, useHistory } from "react-router-dom"
 import "./login.css"
@@ -7,7 +7,7 @@ import "./login.css"
 export default function Signup() {
     const emailRef = useRef()
     const passwordRef = useRef()
-    const { login, currentUser } = useAuth()
+    const { login } = useAuth()
     const [error, setError] = useState("")
     const [loading, setLoading] = useState(false)
     const history = useHistory()

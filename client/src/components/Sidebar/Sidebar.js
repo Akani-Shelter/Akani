@@ -4,7 +4,6 @@ import { Link, useHistory } from "react-router-dom";
 import swal from "sweetalert";
 import ModalComp from "../Modal/Modal";
 import "./Sidebar.css";
-import axios from "axios";
 
 export default function Sidebar(props) {
   const unblockHandle = useRef();
@@ -12,7 +11,6 @@ export default function Sidebar(props) {
   const [collapseShow, setCollapseShow] = React.useState("hidden");
   const [show, setShow] = useState(false);
   const [status, setStatus] = useState(0);
-  const [response, setResponse] = useState({});
   const user = localStorage.getItem("emailSession");
   let cryptoReq = {
     email: localStorage.getItem("emailSession"),
@@ -90,7 +88,7 @@ export default function Sidebar(props) {
             // className="md:block text-left text-blueGray-600 mr-0 inline-block whitespace-nowrap text-sm uppercase font-bold  px-0"
             to="/home"
           >
-            <img className="mt-3" src="/cryptosis2-t.png" />
+            <img className="mt-3" src="/logo.png" />
           </Link>
           {/* User */}
           <ul className="md:hidden items-center flex flex-wrap list-none">

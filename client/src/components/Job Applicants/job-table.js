@@ -24,7 +24,6 @@ import { visuallyHidden } from '@mui/utils';
 import SendIcon from '@mui/icons-material/Send';
 import Button from '@mui/material/Button';
 
-const contact_button = `<Button variant="contained" endIcon={<SendIcon/>}>Contact</Button>`
 function createData(name, calories, fat, carbs, protein) {
   return {
     name,

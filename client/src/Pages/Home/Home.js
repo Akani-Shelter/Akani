@@ -4,7 +4,7 @@ import "bootstrap/dist/css/bootstrap.css";
 import "../../assets/styles/tailwind.css";
 
 function Home(){
-    let [logged, setLogged] = useState(false)
+    let [setLogged] = useState(false)
     let user = localStorage.getItem("emailSession")
 
     useEffect(()=>{

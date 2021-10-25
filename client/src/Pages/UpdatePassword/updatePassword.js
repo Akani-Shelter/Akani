@@ -1,17 +1,13 @@
 import React, { useRef, useState } from "react"
-import { Form, Button, Card, Alert } from "react-bootstrap"
+import { Form, Button , Alert } from "react-bootstrap"
 import { useAuth } from "../../Auth/Auth"
-import { Link, useHistory } from "react-router-dom"
-import Buttons from "@material-ui/core/Button"
 
 export default function UpdatePassword() {
     const emailRef = useRef()
-    const passwordRef = useRef()
-    const { resetPassword, currentUser } = useAuth()
+    const { resetPassword } = useAuth()
     const [error, setError] = useState("")
     const [message, setMessage] = useState("")
     const [loading, setLoading] = useState(false)
-    const history = useHistory()
 
     async function handleSubmit(e) {
         e.preventDefault()
